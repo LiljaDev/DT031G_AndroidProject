@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:key="weatherURL"
+        android:defaultValue="http://dt031g.programvaruteknik.nu/badplatser/weather.php"
+        android:title="@string/preference_weather_url_title"
+        />
+
+    <EditTextPreference
+        android:key="downloadURL"
+        android:defaultValue="http://dt031g.programvaruteknik.nu/badplatser/koordinater/"
+        android:title="@string/preference_download_url_title"
+        />
+
+    <EditTextPreference
+        android:key="mapDistance"
+        android:defaultValue="50"
+        android:title="@string/preference_map_search_distance_title"
+        android:inputType="numberDecimal"
+        android:digits="0123456789"
+        />
+
+</PreferenceScreen>

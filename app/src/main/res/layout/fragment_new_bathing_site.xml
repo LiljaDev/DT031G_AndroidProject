@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewBathingSiteFragment"
+    tools:showIn="@layout/activity_new_bathing_site">
+
+    <!--<HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">-->
+
+        <!--<ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">-->
+
+            <android.support.v7.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:columnCount="4">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_newbathingsite_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_gravity="fill_horizontal"
+                    app:layout_columnSpan="4">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/tiet_newbathingsite_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textPersonName"
+                        android:imeOptions="flagNoExtractUi"
+                        android:hint="@string/newbathingsite_namehint"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_newbathingsite_description"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_gravity="fill_horizontal"
+                    app:layout_columnSpan="4">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/tiet_newbathingsite_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/newbathingsite_descriptionhint"
+                        android:inputType="text"
+                        android:imeOptions="flagNoExtractUi"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_newbathingsite_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_gravity="fill_horizontal"
+                    app:layout_columnSpan="4">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/tiet_newbathingsite_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/newbathingsite_addresshint"
+                        android:inputType="text"
+                        android:imeOptions="flagNoExtractUi"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_newbathingsite_longitude"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnSpan="2"
+                    app:layout_columnWeight="2">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/tiet_newbathingsite_longitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/newbathingsite_longitudehint"
+                        android:inputType="numberDecimal"
+                        android:imeOptions="flagNoExtractUi"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_newbathingsite_latitude"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnSpan="2"
+                    app:layout_columnWeight="2">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/tiet_newbathingsite_latitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/newbathingsite_latitudehint"
+                        android:inputType="numberDecimal"
+                        android:imeOptions="flagNoExtractUi"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textview_newbathingsite_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    app:layout_columnSpan="1"
+                    android:text="@string/newbathingsite_ratinglabel" />
+
+                <android.support.v7.widget.AppCompatRatingBar
+                    android:id="@+id/ratingbar_newbathingsite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_columnSpan="3"
+                    app:layout_gravity="left"
+                    android:numStars="5"
+                    android:stepSize="1"
+                    android:rating="3"
+                    />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_newbathingsite_watertemp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnSpan="2"
+                    app:layout_columnWeight="2">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/tiet_newbathingsite_watertemp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/newbathingsite_watertemphint"
+                        android:inputType="numberDecimal"
+                        android:imeOptions="flagNoExtractUi"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_newbathingsite_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_columnSpan="2"
+                    app:layout_columnWeight="2">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/tiet_newbathingsite_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/newbathingsite_datehint"
+                        android:inputType="date"
+                        android:imeOptions="flagNoExtractUi"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <ProgressBar
+                    android:id="@+id/pb_newbathingsite_weather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_columnSpan="4"
+                    app:layout_columnWeight="4"
+                    app:layout_gravity="center"
+                    android:visibility="invisible"/>
+            </android.support.v7.widget.GridLayout>
+
+    <!--</HorizontalScrollView>-->
+</ScrollView>
